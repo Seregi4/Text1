@@ -20,7 +20,7 @@ public class BuildTextObjectService {
     }
 
 
-    private static Paragraph parseParagraph(String paragraph) {
+    public Paragraph parseParagraph(String paragraph) {
 
         Paragraph resultParagraph = new Paragraph();
         String[] sentences = paragraph.split("[.!?]");

@@ -18,7 +18,8 @@ public class Main {
         BuildTextObjectService service = new BuildTextObjectService();
         EditTextService editTextService = new EditTextService();
 
-        System.out.println("Sort by words count");
+
+        log.info("Sort by words count");
         System.out.println(editTextService.getSortedSentencesByWordCount(service.parseText(text)));
 
         System.out.println("Replace words");
