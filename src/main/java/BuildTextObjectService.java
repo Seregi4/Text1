@@ -37,7 +37,9 @@ public class BuildTextObjectService {
     private static Sentence parseSentence(String sentence) {
 
         Sentence resultSentence = new Sentence();
+        sentence = sentence.trim();
         String[] words = sentence.split(" ");
+
         ArrayList<Word> words1 = new ArrayList<>();
 
 
